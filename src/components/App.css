@@ -1,4 +1,4 @@
-/* Add some basic styling */
+/* Add some basic styling
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
@@ -87,4 +87,17 @@ body {
     margin-bottom: 0;
     padding-top: 1rem;
   }
-  
+   */
+
+   body{
+    background-color: rgb(193, 207, 203);
+  }
+  .price{
+    color: rgb(12, 116, 16);;
+  }
+  #main{
+    width: 70%;
+    margin-top: 15px;
+    display: grid;
+    
+  }
