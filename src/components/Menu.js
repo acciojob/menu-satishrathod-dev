@@ -6,7 +6,7 @@ const Menu = ({ items }) => {
     <div>
       <div className="section-center">
         {items.map((menuItem) => {
-          return <MenuItem key={menuItem.id} {...menuItem} />;
+          return <MenuItem menuItem={menuItem} />;
         })}
       </div>
     </div>
