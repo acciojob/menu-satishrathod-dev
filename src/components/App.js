@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <main>
+    <main id="main">
       <section className="menu section">
         <div className="title">
           <h2>Our Menu</h2>

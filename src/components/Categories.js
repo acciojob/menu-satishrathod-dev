@@ -4,6 +4,8 @@ const Categories = ({ categories, filterItems }) => {
   return (
     <div className="btn-container">
       {categories.map((category, index) => {
+        const btnId = `filter-btn-${index + 1}`;
+        console.log(btnId);
         return (
           <button
             type="button"
