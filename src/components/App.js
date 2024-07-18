@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { items } from "./Data";
 import Categories from "./Categories";
 import Menu from "./Menu";
@@ -8,7 +8,7 @@ const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 function App() {
   const [menuItems, setMenuItems] = useState(items);
-  console.log(menuItems);
+  //   console.log(menuItems);
   const [categories, setCategories] = useState(allCategories);
 
   const filterItems = (category) => {
@@ -19,6 +19,13 @@ function App() {
     const newItems = items.filter((item) => item.category === category);
     setMenuItems(newItems);
   };
+
+  //   useEffect(() => {
+  //     async function getData() {
+  //       let d = await items;
+  //       setMenuItems([d]);
+  //     }
+  //   }, []);
 
   return (
     <main id="main">
